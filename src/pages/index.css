@@ -1,0 +1,39 @@
+
+.container {
+    
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.topbody{
+    background: url("../../static/images/features/afr.jpg") no-repeat center center; 
+}
+.hero.home-top-banner .hero-content {
+    
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+}
+.hero.home-top-banner .hero-content .hero-heading {
+   
+    font-weight: 300;
+}
+.hero.home-top-banner .hero-content {
+    margin: 0 auto;
+    text-align: center;
+   
+}
+.hero-footnote {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    letter-spacing: -.02em;
+}
+.serbtn{
+    background-color: #663399;
+}
+button{
+    background-color: #663399;
+}
