@@ -40,15 +40,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: process.env.DEPLOY_URL ? `https://projectcare.herokuapp.com` : `http://localhost:1337`,
-        queryLimit: 1000, // Default to 100
-        contentTypes: [`articles`, `computers`, `mechanicals`, `accountings`, `user`],
-
-      },
-    },
-    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: guid || 'UA-XXX-1',
