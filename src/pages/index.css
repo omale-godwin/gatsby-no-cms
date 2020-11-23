@@ -9,16 +9,24 @@
 }
 .topbody{
     background: url("../../static/images/features/afr.jpg") no-repeat center center; 
+    height: 400px;
+    filter: brightness(100%);
 }
 .hero.home-top-banner .hero-content {
-    
+    padding-top: 60px;
     margin: 0 auto;
     text-align: center;
     color: #ffffff;
 }
+.teature{
+    margin-top: 0%;
+}
 .hero.home-top-banner .hero-content .hero-heading {
-   
+    color: #ffffff;
     font-weight: 300;
+    font-family: Georgia;
+    font-weight: bold;
+    opacity: 0.9;
 }
 .hero.home-top-banner .hero-content {
     margin: 0 auto;

@@ -21,11 +21,15 @@
     "gatsby-source-strapi": "0.0.12",
     "gatsby-transformer-json": "^2.4.11",
     "gatsby-transformer-remark": "^2.8.30",
+    "html-react-parser": "^0.14.1",
+    "html2pdf.js": "^0.9.2",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
-    "react-icons": "^3.11.0"
+    "react-icons": "^3.11.0",
+    "text_to_html": "^0.2.8",
+    "web-document-viewer": "^11.2.7"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
