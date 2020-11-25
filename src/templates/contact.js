@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import Call from '../components/Call';
+import ConstactMe from '../components/Contacts'
 
 const Contact = ({ data }) => {
   const { title } = data.markdownRemark.frontmatter;
@@ -14,7 +15,7 @@ const Contact = ({ data }) => {
           <div className="col-12 col-md-8">
             <h1 className="title">{title}</h1>
             <Call showButton={false} />
-            <div className="content mt-4" dangerouslySetInnerHTML={{ __html: html }} />
+            <ConstactMe />
           </div>
         </div>
       </div>
