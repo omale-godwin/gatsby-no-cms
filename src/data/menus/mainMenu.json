@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Services",
+        "url": "/services/",
+        "weight": 2
+    },
+    {
+        "name": " Get Source code",
+        "url": "/team/",
+        "weight": 3
+    }
+    ,
+    {
+        "name": " paraphrasing-tool",
+        "url": "/team/",
+        "weight": 4
+    }
+    ,
+    
+    {
+        "name": "Hire A Writer",
+        "url": "/hirewriter/",
+        "weight": 5
+    },
+    {
+        "name": "Request Project",
+        "url": "/request/",
+        "weight": 6
+    },
+    {
+        "name": "About",
+        "url": "/aboutus/",
+        "weight": 7
+    },
+    {
+        "name": "Contact",
+        "url": "/contacts/",
+        "weight": 8
+    }
+]
