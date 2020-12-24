@@ -7,16 +7,18 @@ const data = require('../../categories/architectures.json');
 
 
 const Posts = () => {
+
+  componentDidMount = () => {
   const search = window.location.search;
   const params = new URLSearchParams(search);
   const id = params.get('id');
-
+  }
   return (
   <Layout>
 <div className="container">
-    <h1>{data[id -1].title}</h1>
+    <h1>{data[id].title}</h1>
     <br /><br />
-    {parser(data[id -1].content.replace(/\n/gi, "<br />"))};
+    {parser(data[id].content.replace(/\n/gi, "<br />"))};
 
     </div>
   </Layout>
