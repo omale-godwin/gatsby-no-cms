@@ -135,32 +135,7 @@ exports.createPages = ({ graphql, actions }) => {
     );
   });
 
-  const accounting = makeRequest(
-    graphql,
-    `
-    {
-      allAccountingsJson {
-        edges {
-          node {
-            id
-            title
-          }
-        }
-      }
-    }
-    `
-  ).then(result => {
-    // Create pages for each article.
-    result.data.allAccountingsJson.edges.forEach(({ node }) => {
-      createPage({
-        path: `/${node.id}`,
-        component: path.resolve(`src/templates/article.js`),
-        context: {
-          id: node.id,
-        },
-      })
-    })
-  })
 
-  return Promise.all([markd, accounting])
+
+  return Promise.all([markd])
 };

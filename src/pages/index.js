@@ -94,7 +94,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">ARCHITECTURE</Link>
+                    <Link to="architecture/architech/">ARCHITECTURE</Link>
                   </h2>
                   <p>These are Architecture Science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>
                 </div>
