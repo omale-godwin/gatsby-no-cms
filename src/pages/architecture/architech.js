@@ -11,7 +11,7 @@ const Architecture = ({ data }) => {
 
   function singlepage(e) {
     console.log(e);
-    navigate(`/architecture/post?id=${e}`, 
+    navigate(`/architecture/post?name=${e}`, 
     {
       state: {numbers: e}
     })
