@@ -21,7 +21,7 @@ const Posts = () => {
     
   setId(params.get('id'));
    console.log(id)
-  }, [window])
+  }, )
   
  
    
