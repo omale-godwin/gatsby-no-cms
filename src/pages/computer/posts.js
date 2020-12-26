@@ -11,13 +11,13 @@ const data = require('../../categories/computer_sciences.json');
 
 
 const Posts = () => {
-const [data, setData] = useState(0);
+const [id, setId] = useState(0);
 
 useEffect(() => {
   const search = window.location.search;
   const params = new URLSearchParams(search);
   
-  data = setData(params.get('id'));
+  id = setId(params.get('id'));
  
 })
 
@@ -27,9 +27,9 @@ useEffect(() => {
   return (
   <Layout>
 <div className="container">
-    <h1>{data[data - 1].title}</h1>
+    <h1>{data[id - 1].title}</h1>
     <br /><br />
-    {parser(data[data - 1].content.replace(/\n/gi, "<br />"))};
+    {parser(data[id - 1].content.replace(/\n/gi, "<br />"))};
 
     </div>
   </Layout>
