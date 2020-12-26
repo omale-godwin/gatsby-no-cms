@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import { Link, graphql } from "gatsby"
 
 import getURL from 'get-url-parts';
@@ -11,19 +11,25 @@ const data = require('../../categories/computer_sciences.json');
 
 
 const Posts = () => {
-  console.log(getURL.href())
-  // const search = window.location.search;
-  // const params = new URLSearchParams(search);
-  // const id = params.get('id');
+const [data, setData] = useState(0);
+
+useEffect(() => {
+  const search = window.location.search;
+  const params = new URLSearchParams(search);
+  
+  data = setData(params.get('id'));
  
- const id = getURL.query().name;
+})
+
+ 
+ 
 
   return (
   <Layout>
 <div className="container">
-    <h1>{data[id - 1].title}</h1>
+    <h1>{data[data - 1].title}</h1>
     <br /><br />
-    {parser(data[id - 1].content.replace(/\n/gi, "<br />"))};
+    {parser(data[data - 1].content.replace(/\n/gi, "<br />"))};
 
     </div>
   </Layout>
