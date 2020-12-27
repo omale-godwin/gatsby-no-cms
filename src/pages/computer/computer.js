@@ -10,7 +10,11 @@ const Computer = ({ data }) => {
   const [count, setCount] = useState(0);
 
   function singlepage(e) {
-    console.log(e);
+    
+    
+  sessionStorage.setItem('postid', e)
+
+  console.log(sessionStorage.getItem('postid'))
      navigate(`/computer/posts?id=${e}`)
    
   }
