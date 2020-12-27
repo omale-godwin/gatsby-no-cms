@@ -11,11 +11,10 @@ const Computer = ({ data }) => {
 
   function singlepage(e) {
     console.log(e);
-    // navigate(`/computer/posts?id=${e}`, 
-    {
-      state: {numbers: e}
-    })
+     navigate(`/computer/posts?id=${e}`)
+   
   }
+
   return ( 
 
  
