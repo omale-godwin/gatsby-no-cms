@@ -2,23 +2,14 @@ import React, {useState} from "react"
 import { Link, navigate, graphql } from "gatsby"
 import Layout from "../../components/Layout"
 import './link.css'
-
-
-
-
 const Architecture = ({ data }) => {
   const [count, setCount] = useState(0);
 
   function singlepage(e) {
     console.log(e);
-    navigate(`/architecture/post?id=${e}`, 
-    {
-      state: {numbers: e}
-    })
+    navigate(`/architecture/post?id=${e}`)
   }
   return ( 
-
- 
   <Layout>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
@@ -36,9 +27,7 @@ const Architecture = ({ data }) => {
                   <h5 >
                     <button key={document.node.id } onClick={(e) =>singlepage(document.node.id)} className="list-group-item " to={`/${document.node.id}`}>{document.node.title}</button>
                   </h5>
-
                 </li>
-
               </div>
             ))}
           </ul>

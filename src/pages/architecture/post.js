@@ -1,16 +1,16 @@
-import React, { Component } from 'react'
-import Layout from '../../components/Layout'
+import React from 'react'
+import parser from 'html-react-parser';
+import Layout from '../../components/Layout';
 import data from '../../categories/architectures.json'
-import parser from 'html-react-parser'
 
-export default class posts extends Component {
- 
- 
-  render() {
-    const id = sessionStorage.getItem('postid')
-    console.log(id);
-    return (
-      <Layout>
+function post() {
+  const search = window.location.search;
+  const params = new URLSearchParams(search);
+  const id = params.get('id');
+
+  return (
+    <div>
+       <Layout>
       <div className="container">
           <h1>{data[id - 1].title}</h1>
           <br /><br />
@@ -18,6 +18,8 @@ export default class posts extends Component {
       
           </div>
         </Layout>
-    )
-  }
+    </div>
+  )
 }
+
+export default post
