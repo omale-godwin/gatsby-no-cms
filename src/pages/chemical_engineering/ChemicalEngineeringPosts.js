@@ -1,0 +1,34 @@
+import React, {Component} from 'react'
+import parser from 'html-react-parser';
+import Layout from '../../components/Layout';
+import data from '../../categories/chemical_engineerings.json'
+
+export class ChemicalEngineeringPosts extends Component {
+  constructor (){
+    super()
+    this.state = {
+    postid: ''
+    }
+  };
+
+  componentDidMount(){
+    const search = window.location.search;
+    const params = new URLSearchParams(search);
+    this.setState({postid: params.get('id')});
+  
+  }
+  render(){
+    
+  return (
+    <div>
+       <Layout>
+      <div className="container">
+          <h1>{data[this.state.postid - 1].title}</h1>
+          <br /><br />
+          {parser(data[this.state.postid - 1].content.replace(/\n/gi, "<br />"))};
+      
+          </div>
+        </Layout>
+    </div>
+  )}
+}

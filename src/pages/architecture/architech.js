@@ -5,9 +5,9 @@ import './link.css'
 const Architecture = ({ data }) => {
   const [count, setCount] = useState(0);
 
-  function singlepage(e) {
+  function singlepage(e, title) {
     console.log(e);
-    navigate(`/architecture/post?id=${e}`)
+    navigate(`/architecture/post?title=${title}&id=${e}`)
   }
   return ( 
   <Layout>
@@ -25,7 +25,7 @@ const Architecture = ({ data }) => {
                 <li key={document.node.id }>
 
                   <h5 >
-                    <button key={document.node.id } onClick={(e) =>singlepage(document.node.id)} className="list-group-item " to={`/${document.node.id}`}>{document.node.title}</button>
+                    <button key={document.node.id } onClick={(e) =>singlepage(document.node.id, document.node.title)} className="list-group-item " to={`/${document.node.id}`}>{document.node.title}</button>
                   </h5>
                 </li>
               </div>

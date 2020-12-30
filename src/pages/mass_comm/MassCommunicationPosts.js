@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 import parser from 'html-react-parser';
 import Layout from '../../components/Layout';
-import data from '../../categories/computer_sciences.json'
+import data from '../../categories/mass_communications.json'
 
-export class Post extends Component {
+export class ComputerPosts extends Component {
   constructor (){
     super()
     this.state = {
@@ -40,4 +40,4 @@ export class Post extends Component {
   )}}
 }
 
-export default Post
+export default ComputerPosts

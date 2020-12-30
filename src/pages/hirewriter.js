@@ -15,85 +15,135 @@ const Hirewriter = props => {
                         Unique, Well Researched, Timely Delivery for all kind of research, get fresh topics written in 2-5 days, from Easy, thesis, academic journal, proposal, research project, full chapter 1-5 ready project,&nbsp; seminars <a href="https://projectcare.netlify.app/request">CLICK HERE</a> to see the form.
 					</div>
 				</div></div>  
+                <section className="pricing-style-1 bg-white p-3">
+      <div className="container">
+      <div className="row">
+      <div className="col-10 col-md-8 col-lg-4 py-2 mx-auto">
+        <div className="card font-title text-center">
+          <div className="card-header bg-danger cwhite">
+          <h5>Basic</h5>
+          <h3 className="p-2 font-jumbo">Free</h3>
+          <p className="p-2">forever</p>
+        </div>
+        <div className="card-body text-center">
+          <ul className="p-0 ">
+            <li className="p-2">2 Users   <div className="mline bg-primary"></div></li>
+            <li className="p-2">Complete documentation   <div className="mline bg-primary"></div></li>
+            <li className="p-2">Email Notifications  <div className="mline bg-primary"></div></li>
+            <li className="p-2">1 GB Storage</li>
+              <li className="p-2 my-3"><a className="btn btn-danger" href="#">Get Started</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div className="col-10 col-md-8 col-lg-4 py-2 mx-auto">
+        <div className="card font-title text-center">
+          <div className="card-header bg-primary cwhite">
+          <h5>Premium</h5>
+          <h3 className="p-2 font-jumbo">$ 50</h3>
+          <p className="p-2">Per Month</p>
+        </div>
+        <div className="card-body text-center">
+          <ul className="p-0">
+            <li className="p-2">10 Users   <div className="mline bg-primary"></div></li>
+            <li className="p-2">Complete documentation   <div className="mline bg-primary"></div></li>
+            <li className="p-2">Email & SMS Notifications  <div className="mline bg-primary"></div></li>
+            <li className="p-2">10 GB Storage <div className="mline bg-primary"></div></li>
+            <li className="p-2">Access to Library</li>
+              <li className="p-2 my-3"><a className="btn btn-primary" href="#">Get Started</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div className="col-10 col-md-8 col-lg-4 py-2 mx-auto">
+        <div className="card font-title text-center">
+          <div className="card-header bg-warning cwhite">
+          <h5>Pro</h5>
+          <h3 className="p-2 font-jumbo">$ 100</h3>
+          <p className="p-2">Per Month</p>
+        </div>
+        <div className="card-body text-center">
+          <ul className="p-0">
+            <li className="p-2">Unlimited Users   <div className="mline bg-primary"></div></li>
+            <li className="p-2">Complete documentation   <div className="mline bg-primary"></div></li>
+            <li className="p-2">Email & SMS Notifications  <div className="mline bg-primary"></div></li>
+            <li className="p-2">Unlimited Storage <div className="mline bg-primary"></div></li>
+            <li className="p-2">Access to Library <div className="mline bg-primary"></div></li>
+            <li className="p-2">Priority Support </li>
+              <li className="p-2 my-3"><a className="btn btn-warning" href="#">Get Started</a></li>
+          </ul>
+        </div>
+        </div>
 
-<div className="container mt-5">
-
-    <div className="row bg-white p-3 text-center rounded">
-        <div className="col-md-4">
-            <div className="py-5"><img src="https://i.imgur.com/bnvUniP.png" width="50"/>
-                <h3 className="blue-color mt-4 text-uppercase">BASIC N5,999</h3><span className="d-block">ND, NCE,HND, BSC, </span><span className="d-block">No Proposal</span><span className="d-block">Yes Abstract</span><span className="d-block">Standard Support</span><span className="d-block blue-color mt-3">Yes Chapters 1-5</span>
-                <span className="d-block">Yes Content Nature [Guide]</span><span className="d-block">Length (within 1-50 pages) [High] Plagiarism</span><span className="d-block">Yes Analysis </span><span className="d-block">No Support/Corrections </span><span className="d-block">Yes Material Format; MS-Word </span><span className="d-block">Departments; Mgt./Bus., Soc., Sci. & Edu, Etc </span>
-                <span className="d-block">No Source Code/App [for Comp. Sci.]</span><span className="d-block">Yes References</span>
-            </div>
-        </div>
-        <div className="col-md-4">
-        <div className="py-5"><img src="https://i.imgur.com/bnvUniP.png" width="50"/>
-                <h3 className="blue-color mt-4 text-uppercase">STANDARD N8,999</h3><span className="d-block">ND, NCE,HND, BSC, </span><span className="d-block">No Proposal</span><span className="d-block">Yes Abstract</span><span className="d-block">Standard Support</span><span className="d-block blue-color mt-3">Yes Chapters 1-5</span>
-                <span className="d-block">Yes Content Nature [Guide]</span><span className="d-block">Length (within 1-60 pages) [Meduim] Plagiarism</span><span className="d-block">Yes Analysis </span><span className="d-block">No Support/Corrections </span><span className="d-block">Yes Material Format; MS-Word </span><span className="d-block">Departments; Mgt./Bus., Soc., Sci. & Edu, Etc </span>
-                <span className="d-block">No Source Code/App [for Comp. Sci.]</span><span className="d-block">Yes References</span>
-            </div>
-        </div>
-        <div className="col-md-4">
-        <div className="py-5"><img src="https://i.imgur.com/bnvUniP.png" width="50"/>
-                <h3 className="blue-color mt-4 text-uppercase">PROFESSIONAL N13,999</h3><span className="d-block">ND, NCE,HND, BSC, </span><span className="d-block">No Proposal</span><span className="d-block">Yes Abstract</span><span className="d-block">Standard Support</span><span className="d-block blue-color mt-3">Yes Chapters 1-5</span>
-                <span className="d-block">Yes Content Nature [Guide]</span><span className="d-block">Length (within 1-70 pages) [Meduim] Plagiarism</span><span className="d-block">Yes Analysis </span><span className="d-block">5 times Support/Corrections </span><span className="d-block">Yes Material Format; MS-Word </span><span className="d-block">Departments; Mgt./Bus., Soc., Sci. & Edu, Etc </span>
-                <span className="d-block">No Source Code/App [for Comp. Sci.]</span><span className="d-block">Yes References</span>
-            </div>
-        </div>
+      </div>
     </div>
-</div>
- 
-<div className="container mt-5">
-
-    <div className="row bg-white p-3 text-center rounded">
-        <div className="col-md-4">
-        <div className="py-5"><img src="https://i.imgur.com/bnvUniP.png" width="50"/>
-                <h3 className="blue-color mt-4 text-uppercase">PROFESSIONAL N23,999</h3><span className="d-block">HND, BSC, </span><span className="d-block">No Proposal</span><span className="d-block">Yes Abstract</span><span className="d-block">Standard Support</span><span className="d-block blue-color mt-3">Yes Chapters 1-5</span>
-                <span className="d-block">Yes Content Nature [Guide]</span><span className="d-block">Length (within 1-80 pages) (Very low ) Plagiarism </span><span className="d-block">Yes Analysis </span><span className="d-block">5 times Support/Corrections </span><span className="d-block">Yes Material Format; MS-Word </span><span className="d-block">Departments; Mgt./Bus., Soc., Sci. & Edu, Etc </span>
-                <span className="d-block">Yes Source Code/App [for Comp. Sci.]</span><span className="d-block">Yes References</span>
-            </div>
-        </div>
-        <div className="col-md-4">
-        <div className="py-5"><img src="https://i.imgur.com/bnvUniP.png" width="50"/>
-                <h3 className="blue-color mt-4 text-uppercase">PROFESSIONAL N33,999</h3><span className="d-block">HND, BSC, </span><span className="d-block">Yes Proposal</span><span className="d-block">Yes Abstract</span><span className="d-block">Standard Support</span><span className="d-block blue-color mt-3">Yes Chapters 1-5</span>
-                <span className="d-block">Yes Content Nature [Guide]</span><span className="d-block">Length (within 1-90 pages) [low] Plagiarism</span><span className="d-block">Yes Analysis </span><span className="d-block">5 times Support/Corrections </span><span className="d-block">Yes Material Format; MS-Word </span><span className="d-block">Departments; Mgt./Bus., Soc., Sci. & Edu, Etc </span>
-                <span className="d-block">yes Source Code/App [for Comp. Sci.]</span><span className="d-block">Yes References</span>
-            </div>
-        </div>
-        <div className="col-md-4">
-        <div className="py-5"><img src="https://i.imgur.com/bnvUniP.png" width="50"/>
-                <h3 className="blue-color mt-4 text-uppercase">PROFESSIONAL N23,999</h3><span className="d-block">ND, NCE,HND, BSC, </span><span className="d-block">No Proposal</span><span className="d-block">Yes Abstract</span><span className="d-block">Standard Support</span><span className="d-block blue-color mt-3">Yes Chapters 1-5</span>
-                <span className="d-block">Yes Content Nature [Guide]</span><span className="d-block">Length (within 1-70 pages) [Meduim] Plagiarism</span><span className="d-block">Yes Analysis </span><span className="d-block">5 times Support/Corrections </span><span className="d-block">Yes Material Format; MS-Word </span><span className="d-block">Departments; Mgt./Bus., Soc., Sci. & Edu, Etc </span>
-                <span className="d-block">No Source Code/App [for Comp. Sci.]</span><span className="d-block">Yes References</span>
-            </div>
-        </div>
     </div>
-</div>
- 
+</section>
 
-<div className="container mt-5">
+<section className="pricing-style-1 bg-white p-3">
+      <div className="container">
+      <div className="row">
+      <div className="col-10 col-md-8 col-lg-4 py-2 mx-auto">
+        <div className="card font-title text-center">
+          <div className="card-header bg-danger cwhite">
+          <h5>Basic</h5>
+          <h3 className="p-2 font-jumbo">Free</h3>
+          <p className="p-2">forever</p>
+        </div>
+        <div className="card-body text-center">
+          <ul className="p-0 ">
+            <li className="p-2">2 Users   <div className="mline bg-primary"></div></li>
+            <li className="p-2">Complete documentation   <div className="mline bg-primary"></div></li>
+            <li className="p-2">Email Notifications  <div className="mline bg-primary"></div></li>
+            <li className="p-2">1 GB Storage</li>
+              <li className="p-2 my-3"><a className="btn btn-danger" href="#">Get Started</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div className="col-10 col-md-8 col-lg-4 py-2 mx-auto">
+        <div className="card font-title text-center">
+          <div className="card-header bg-primary cwhite">
+          <h5>Premium</h5>
+          <h3 className="p-2 font-jumbo">$ 50</h3>
+          <p className="p-2">Per Month</p>
+        </div>
+        <div className="card-body text-center">
+          <ul className="p-0">
+            <li className="p-2">10 Users   <div className="mline bg-primary"></div></li>
+            <li className="p-2">Complete documentation   <div className="mline bg-primary"></div></li>
+            <li className="p-2">Email & SMS Notifications  <div className="mline bg-primary"></div></li>
+            <li className="p-2">10 GB Storage <div className="mline bg-primary"></div></li>
+            <li className="p-2">Access to Library</li>
+              <li className="p-2 my-3"><a className="btn btn-primary" href="#">Get Started</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div className="col-10 col-md-8 col-lg-4 py-2 mx-auto">
+        <div className="card font-title text-center">
+          <div className="card-header bg-warning cwhite">
+          <h5>Pro</h5>
+          <h3 className="p-2 font-jumbo">$ 100</h3>
+          <p className="p-2">Per Month</p>
+        </div>
+        <div className="card-body text-center">
+          <ul className="p-0">
+            <li className="p-2">Unlimited Users   <div className="mline bg-primary"></div></li>
+            <li className="p-2">Complete documentation   <div className="mline bg-primary"></div></li>
+            <li className="p-2">Email & SMS Notifications  <div className="mline bg-primary"></div></li>
+            <li className="p-2">Unlimited Storage <div className="mline bg-primary"></div></li>
+            <li className="p-2">Access to Library <div className="mline bg-primary"></div></li>
+            <li className="p-2">Priority Support </li>
+              <li className="p-2 my-3"><a className="btn btn-warning" href="#">Get Started</a></li>
+          </ul>
+        </div>
+        </div>
 
-    <div className="row bg-white p-3 text-center rounded">
-        <div className="col-md-4">
-            <div className="py-5"><img src="https://i.imgur.com/bnvUniP.png" width="50"/>
-                <h3 className="blue-color mt-4 text-uppercase">Starter</h3><span className="d-block">1 Team member</span><span className="d-block">3 projects</span><span className="d-block">500GB Storage</span><span className="d-block">Standard Support</span><span className="d-block blue-color mt-3">$10.99/month</span>
-            </div>
-        </div>
-        <div className="col-md-4">
-            <div className="py-5"><img src="https://i.imgur.com/bnvUniP.png" width="50"/>
-                <h3 className="blue-color mt-4 text-uppercase">Professional</h3><span className="d-block">10 Team member</span><span className="d-block">15 projects</span><span className="d-block">1000GB Storage</span><span className="d-block">Standard Support</span><span className="d-block blue-color mt-3">$15.99/month</span>
-            </div>
-        </div>
-        <div className="col-md-4">
-            <div className="py-5"><img src="https://i.imgur.com/bnvUniP.png" width="50"/>
-                <h3 className="blue-color mt-4 text-uppercase">Team</h3><span className="d-block">15 Team member</span><span className="d-block">30 projects</span><span className="d-block">1500GB Storage</span><span className="d-block">Standard Support</span><span className="d-block blue-color mt-3">$20.99/month</span>
-            </div>
-        </div>
+      </div>
     </div>
-</div>
-
-
-
+    </div>
+</section>
 
  </Layout>
   );

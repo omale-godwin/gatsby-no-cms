@@ -154,7 +154,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">Biochemistry Project Topics and Available Materials</Link>
+                    <Link to="/Biochemistry/Biochemistry">Biochemistry Project Topics and Available Materials</Link>
                   </h2>
                   <p>These are Biochemistry department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -176,7 +176,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">CHEMICAL ENGINEERING</Link>
+                    <Link to="/chemical_engineering/ChemicalEngineering">CHEMICAL ENGINEERING</Link>
                   </h2>
                   <p>These are Chemical Engineering Science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>
                 </div>
@@ -462,7 +462,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">MASS COMMUNICATION</Link>
+                    <Link to="/mass_comm/MassCommunication">MASS COMMUNICATION</Link>
                   </h2>
                   <p>These are Mass Communication department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>

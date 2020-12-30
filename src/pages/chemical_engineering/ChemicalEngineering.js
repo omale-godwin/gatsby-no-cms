@@ -6,7 +6,7 @@ import './link.css'
 
 
 
-const Computer = ({ data }) => {
+const ChemicalEngineering = ({ data }) => {
   const [count, setCount] = useState(0);
 
   function singlepage(e) {
@@ -15,7 +15,7 @@ const Computer = ({ data }) => {
   sessionStorage.setItem('postid', e)
 
   console.log(sessionStorage.getItem('postid'))
-     navigate(`/computer/ComputerPosts?id=${e}`)
+     navigate(`/chemical_engineering/ChemicalEngineeringPosts?id=${e}`)
    
   }
 
@@ -31,7 +31,7 @@ const Computer = ({ data }) => {
         <div className="row justify-content-start">
 
           <ul>
-            {data.allComputerSciencesJson .edges.map(document => ( 
+            {data.allChemicalEngineeringsJson .edges.map(document => ( 
 
               <div key={document.node.id} className="list-group" >
                 <li key={document.node.id }>
@@ -51,10 +51,10 @@ const Computer = ({ data }) => {
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )}
-export default Computer
+export default ChemicalEngineering
 export const pageQuery = graphql`
-  query Computer {
-    allComputerSciencesJson  {
+  query ChemicalEngineering {
+    allChemicalEngineeringsJson  {
       edges {
         node {
           id
