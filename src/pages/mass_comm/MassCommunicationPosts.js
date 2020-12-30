@@ -3,7 +3,7 @@ import parser from 'html-react-parser';
 import Layout from '../../components/Layout';
 import data from '../../categories/mass_communications.json'
 
-export class ComputerPosts extends Component {
+export class MassCommunicationPosts extends Component {
   constructor (){
     super()
     this.state = {
@@ -40,4 +40,4 @@ export class ComputerPosts extends Component {
   )}}
 }
 
-export default ComputerPosts
+export default MassCommunicationPosts

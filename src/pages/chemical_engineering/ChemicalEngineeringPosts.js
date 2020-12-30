@@ -18,7 +18,14 @@ export class ChemicalEngineeringPosts extends Component {
   
   }
   render(){
-    
+    if(this.state.postid == null || this.state.postid == undefined || this.state.postid == ''){
+      return(
+        <div>
+          <h1>loading</h1>
+        </div>
+      )
+    }else{
+
   return (
     <div>
        <Layout>
@@ -30,5 +37,7 @@ export class ChemicalEngineeringPosts extends Component {
           </div>
         </Layout>
     </div>
-  )}
+  )}}
 }
+
+export default ChemicalEngineeringPosts;
