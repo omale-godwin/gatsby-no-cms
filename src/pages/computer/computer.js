@@ -23,13 +23,18 @@ const Computer = ({ data }) => {
 
  
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+   
     <div className="strip">
       <div className="container pt-6 pb-6 pb-md-10">
         <div className="row justify-content-start">
 
+  <div className="container">
+        <h4 style={{textAlign: 'center'}}>
+          <span style={{fontSize: '15px'}}>Please Scroll Down To Click On Your Topic To View Abstract, Table Of Contents And Chapter 1-5, 
+          references, questionnaire,<strong> source code</strong> And Download complete Material Instantly Or 
+          <span style={{color: '#008000'}}><strong>Call Us Or Whats-App Us (+234) 9032196744</strong></span>&nbsp;For Your
+           <em>Computer Science Project Topics and Materials</em></span></h4>
+           </div>
           <ul>
             {data.allComputerSciencesJson .edges.map(document => ( 
 

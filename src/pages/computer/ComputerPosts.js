@@ -34,12 +34,12 @@ export class ComputerPosts extends Component {
       <div className="alert alert-success no-margin" style={{fontSize: '16px'}}>
                 <i className="fa fa-file-text"></i>&nbsp;Format: <b>MS WORD</b>&nbsp;::&nbsp;
                 <i className="fa fa-folder-open"></i>&nbsp;Chapters: <b>1-5</b>&nbsp;::&nbsp;
+             
+          references, questionnaire,<strong> source code</strong> And Download complete Material Instantly Or 
+          <span style={{color: '#008000'}}><strong>Call Us Or Whats-App Us (+234) 9032196744</strong></span>&nbsp;For Your
+           <em>Computer Science Project Topics and Materials</em>
               
-                <i className="fa fa-chain"></i>&nbsp;Attributes: <b>Questionnaire, Data Analysis</b>
-                                    ::&nbsp;
-              
-                <i className="fa fa-group"></i>&nbsp;<b>4,921 </b> people found this useful
-                              
+                <i className="fa fa-group"></i>&nbsp;
                 <div className="text-center">
                   <Link to="" id="get" className="btn btn-lg btn-warning" >Get the complete project »</Link>
                 </div>
