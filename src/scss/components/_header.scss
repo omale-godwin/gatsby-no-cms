@@ -1,30 +1,35 @@
 .header {
+  
   color: $primary;
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   // box-shadow: 0 1px 15px rgba(50, 50, 93, 0.2);
-  border-bottom: 1px solid $white-offset;
+  border-bottom: 3px solid $white-offset;
   padding: 0px 0px;
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2px;
+    padding-top: 4px;
     padding-bottom: 8px;
   }
   &.header-absolute {
-    position: absolute;
+    
     z-index: 10;
     width: 100%;
 
+  }
+  .myhaeder{
+   
+    top: 5px;
   }
 }
 .lock-scroll {
   .header {
     &.header-absolute {
-      position: static;
+      position: fixed;
       padding-top: 0px;
     }
   }

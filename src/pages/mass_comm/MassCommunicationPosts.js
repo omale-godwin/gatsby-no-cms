@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import parser from 'html-react-parser';
 import Layout from '../../components/Layout';
 import data from '../../categories/mass_communications.json'
+import {Link} from 'gatsby'
 
 export class MassCommunicationPosts extends Component {
   constructor (){
@@ -30,6 +31,21 @@ export class MassCommunicationPosts extends Component {
     <div>
        <Layout>
       <div className="container">
+      <div className="alert alert-success no-margin" style={{fontSize: '16px'}}>
+                <i className="fa fa-file-text"></i>&nbsp;Format: <b>MS WORD</b>&nbsp;::&nbsp;
+                <i className="fa fa-folder-open"></i>&nbsp;Chapters: <b>1-5</b>&nbsp;::&nbsp;
+              
+                <i className="fa fa-chain"></i>&nbsp;Attributes: <b>Questionnaire, Data Analysis</b>
+                                    ::&nbsp;
+              
+                <i className="fa fa-group"></i>&nbsp;<b>4,921 </b> people found this useful
+                              
+                <div className="text-center">
+                  <Link to="" id="get" className="btn btn-lg btn-warning" >Get the complete project »</Link>
+                </div>
+            </div>
+    
+     
           <h1>{data[this.state.postid - 1].title}</h1>
           <br /><br />
           {parser(data[this.state.postid - 1].content.replace(/\n/gi, "<br />"))};

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import parser from 'html-react-parser';
+import {Link} from 'gatsby'
 import Layout from '../../components/Layout';
 import data from '../../categories/chemical_engineerings.json'
 
@@ -30,8 +31,23 @@ export class ChemicalEngineeringPosts extends Component {
     <div>
        <Layout>
       <div className="container">
-          <h1>{data[this.state.postid - 1].title}</h1>
-          <br /><br />
+      <div className="alert alert-success no-margin" style={{fontSize: '16px'}}>
+                <i className="fa fa-file-text"></i>&nbsp;Format: <b>MS WORD</b>&nbsp;::&nbsp;
+                <i className="fa fa-folder-open"></i>&nbsp;Chapters: <b>1-5</b>&nbsp;::&nbsp;
+              
+                <i className="fa fa-chain"></i>&nbsp;Attributes: <b>Questionnaire, Data Analysis</b>
+                                    ::&nbsp;
+              
+                <i className="fa fa-group"></i>&nbsp;<b>4,921 </b> people found this useful
+                              
+                <div className="text-center">
+                  <Link to="" id="get" className="btn btn-lg btn-warning" >Get the complete project »</Link>
+                </div>
+            </div>
+    
+     
+            <h1 className="alert alert-info text-center" style={{fontSize:'18px'}}>{data[this.state.postid - 1].title}</h1>
+         <br /><br />
           {parser(data[this.state.postid - 1].content.replace(/\n/gi, "<br />"))};
       
           </div>

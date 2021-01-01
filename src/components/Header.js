@@ -36,7 +36,8 @@ class Header extends React.Component {
               <img height={config.logo.desktop_height} alt={config.logo.alt} src={config.logo.mobile} />
             </Link>
           </div>
-          <div className="text-center">
+          
+          <div className="text-center" >
             <Call />
           </div>
           <MenuMobile active={this.state.menuActive} />

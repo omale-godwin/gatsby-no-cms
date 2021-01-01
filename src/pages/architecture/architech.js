@@ -11,9 +11,13 @@ const Architecture = ({ data }) => {
   }
   return ( 
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <div className="text-center pt-5" style={{color: '#8036ca'}}>
+      <h4>ARCHITECTURE PROJECT TOPICS AND MATERIALS</h4>
+      
+
+    </div>
+    
+    <h3></h3>
     <div className="strip">
       <div className="container pt-6 pb-6 pb-md-10">
         <div className="row justify-content-start">
@@ -23,10 +27,13 @@ const Architecture = ({ data }) => {
 
               <div key={document.node.id} className="list-group" >
                 <li key={document.node.id }>
-
+               <ul>
+                 <li >
                   <h5 >
                     <button key={document.node.id } onClick={(e) =>singlepage(document.node.id, document.node.title)} className="list-group-item " to={`/${document.node.id}`}>{document.node.title}</button>
                   </h5>
+                  </li>
+                  </ul>
                 </li>
               </div>
             ))}
