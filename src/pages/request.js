@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
+import Call from '../components/Call'
 
 
 const Request = () => {
@@ -22,9 +23,12 @@ const Request = () => {
         &q=Space+Needle,Seattle+WA" allowFullScreen>
       </iframe>
     </div>
+    
     <div className="col-12 col-md-4 px-4 py-5 bg-white">
+    <Call />
+    <br/><br/>
       <form>
-        <h1 className="font-title bolder text-center mb-4 uppercase" >Request Project Material</h1>
+        <h2 className="font-title bolder text-center mb-4 uppercase text-center" >Request Project Material</h2>
         <div className="form-group">
           <label>Name</label>
           <input type="text" className="form-control flat material-shadow" />
@@ -38,7 +42,7 @@ const Request = () => {
           <input type="number" className="form-control flat material-shadow" />
         </div>
         <div className="form-group">
-          <label>Message</label>
+          <label>Message or Project Topic</label>
           <textarea className="form-control flat material-shadow" rows="4"></textarea>
         </div>
         <div className="form-group ">

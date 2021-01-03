@@ -8,7 +8,7 @@ import '../components/about.css'
 import './andriods.css'
 
 
-const Andriod = () => {
+const Php = () => {
   
  
     
@@ -30,4 +30,4 @@ const Andriod = () => {
         </Layout>
     )
 }
-export default Andriod;
+export default Php;

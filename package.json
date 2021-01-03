@@ -31,6 +31,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^3.11.0",
     "react-slick": "^0.27.13",
+    "slick-carousel": "^1.8.1",
     "text_to_html": "^0.2.8",
     "web-document-viewer": "^11.2.7"
   },
