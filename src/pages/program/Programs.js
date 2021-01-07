@@ -2,12 +2,12 @@ import React, {useState} from "react"
 import { Link, navigate, graphql } from "gatsby"
 import Layout from "../../components/Layout"
 import './link.css'
-const Architecture = ({ data }) => {
+const Programs = ({ data }) => {
   const [count, setCount] = useState(0);
 
   function singlepage(e, title) {
     console.log(e);
-    navigate(`/architecture/post?title=${title}&id=${e}`)
+    navigate(`/program/ProgramPosts?title=${title}&id=${e}`)
   }
   return ( 
   <Layout>
@@ -23,7 +23,7 @@ const Architecture = ({ data }) => {
         <div className="row justify-content-start">
 
           <ul>
-            {data.allArchitecturesJson .edges.map(document => ( 
+            {data.allProgramsJson .edges.map(document => ( 
 
               <div key={document.node.id} className="list-group" >
                 <li key={document.node.id }>
@@ -41,12 +41,13 @@ const Architecture = ({ data }) => {
         </div>
       </div>
     </div>
-     </Layout>
+    <Link to="/page-2/">Go to page 2</Link>
+  </Layout>
 )}
-export default Architecture
+export default Programs
 export const pageQuery = graphql`
-  query Architecture {
-    allArchitecturesJson  {
+  query Programs {
+    allProgramsJson  {
       edges {
         node {
           id

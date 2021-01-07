@@ -42,7 +42,8 @@ const Home = props => {
                     <div className="feature">
 
                       <h2 className="feature-title">{node.title}</h2>
-                      <div className="feature-content">{node.description}</div>
+                      <div className="feature-content">{node.description}</div><br />
+                      
                       <button className="serbtn btn btn-primary">{node.text}</button>
                     </div>
                   </div>
@@ -54,7 +55,7 @@ const Home = props => {
       </div>
       <div className="row justify-content-center">
         <div className="col-auto">
-          <Link className="button button-primary" to="/services/">View All Project By Department</Link>
+          <Link className="button button-primary" to="/">View All Project By Department</Link>
         </div>
       </div>
 
@@ -69,7 +70,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">ACCOUNTING PROJECTS</Link>
+                    <Link to="/acounting/Accounting">ACCOUNTING PROJECTS</Link>
                   </h2>
                   <p>Accounting project topics and materials for undergraduate and post graduate students. The research project paper and seminar topics and materials</p>
                 </div>
