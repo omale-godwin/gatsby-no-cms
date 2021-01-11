@@ -3,6 +3,10 @@ import { graphql, Link } from 'gatsby';
 import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
+import Carousel from 'react-img-carousel';
+
+require('react-img-carousel/lib/carousel.css');
+
 
 
 import Jumbotron from '../pages/jumbotron'
@@ -28,7 +32,13 @@ const Home = props => {
       </Helmet>
 
       <div className="jumbo">
-        <Jumbotron />
+        <div className="container">
+        <Carousel viewportWidth="100%" autoplay={true} cellPadding={ 5 }>
+    <img src='https://placekitten.com/500/300'/>
+    <img src='https://placekitten.com/300/300'/>
+    <img src='https://placekitten.com/400/300'/>
+  </Carousel>
+        </div>
 
 
       </div>
