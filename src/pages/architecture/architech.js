@@ -1,3 +1,4 @@
+import parser from 'html-react-parser';
 import React, {useState} from "react"
 import { Link, navigate, graphql } from "gatsby"
 import Layout from "../../components/Layout"
@@ -30,7 +31,7 @@ const Architecture = ({ data }) => {
                <ul>
                  <li >
                   <h5 >
-                    <button key={document.node.id } onClick={(e) =>singlepage(document.node.id, document.node.title)} className="list-group-item " to={`/${document.node.id}`}>{document.node.title}</button>
+                    <button key={document.node.id } onClick={(e) =>singlepage(document.node.id, document.node.title)} className="list-group-item " to={`/${document.node.id}`}><h3>{parser(document.node.title)}</h3></button>
                   </h5>
                   </li>
                   </ul>

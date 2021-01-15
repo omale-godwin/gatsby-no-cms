@@ -9,7 +9,6 @@ require('react-img-carousel/lib/carousel.css');
 
 
 
-import Jumbotron from '../pages/jumbotron'
 import './index.css'
 import Accountings from './accountings';
 const Home = props => {
@@ -45,7 +44,7 @@ const Home = props => {
       <div className="teature">
         {features.length > 0 && (
           <div className="strip strip-grey">
-            <div className="container pt-6 pb-6 pt-md-10 pb-md-10">
+            <div className="container pb-6 pt-md-1 pb-md-10">
               <div className="row justify-content-center">
                 {features.map(({ node }) => (
                   <div key={node.id} className="col-12 col-md-6 col-lg-4 mb-2">
@@ -94,7 +93,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">APPLIED SCIENCE</Link>
+                    <Link to="/APPLIEDSCIENCE/APPLIEDSCIENCE">APPLIED SCIENCE</Link>
                   </h2>
                   <p>These are Apllied Science  project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>
                 </div>
@@ -117,7 +116,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">AGRICULTURAL SCIENCE PROJECT</Link>
+                    <Link to="/Agriculture/Agriculture">AGRICULTURAL SCIENCE PROJECT</Link>
                   </h2>
                   <p>These are Agricultural Science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>
                 </div>
@@ -128,7 +127,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">Banking and Finance Project Topics and Materials</Link>
+                    <Link to="/BankingandFinance/BankingandFinance">Banking and Finance Project Topics and Materials</Link>
                   </h2>
                   <p>These are Banking and Finance department project topics with available well written chapters 1 to chapter 5,
                    Please click on a project topic to view its details and order for the complete material</p>
@@ -140,14 +139,23 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">Biological Science Project Topics and Available Materials</Link>
+                    <Link to="/Biochemistry/Biochemistry">Biological Science Project Topics and Available Materials</Link>
                   </h2>
                   <p>These are Biology Science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
             </div>
 
 
-
+            <div className="col-12 col-md-4 mb-1">
+              <div className="service service-summary">
+                <div className="service-content">
+                  <h2 className="service-title">
+                    <Link to="/Building/Building"> Building</Link>
+                  </h2>
+                  <p>These are Chemical Engineering Science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>
+                </div>
+              </div>
+            </div>
 
 
 
@@ -156,7 +164,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">Business Administration projects</Link>
+                    <Link to="/BusinessAdministrationandManagement/BusinessAdministrationandManagement">Business Administration projects</Link>
                   </h2>
                   <p>These are Business Administration department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>  </div>
               </div>
@@ -166,7 +174,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/Biochemistry/Biochemistry">Biochemistry Project Topics and Available Materials</Link>
+                    <Link to="/Biochemistry/Biochemistry"> Bio-Chemistry Project Topics and Available Materials</Link>
                   </h2>
                   <p>These are Biochemistry department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -177,7 +185,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">CHEMISTRY</Link>
+                    <Link to="/CHEMISTRY/CHEMISTRY">CHEMISTRY</Link>
                   </h2>
                   <p>These are Chemistry Science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>
                 </div>
@@ -199,7 +207,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">Civil Engineering Project Topics and Materials</Link>
+                    <Link to="/CivilEngineering/CivilEngineering">Civil Engineering Project Topics and Materials</Link>
                   </h2>
                   <p>These are Civil Engineering department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>       </div>
               </div>
@@ -221,7 +229,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">COMPUTER ENGINEERING</Link>
+                    <Link to="/COMPUTERENGINEERING/COMPUTERENGINEERING">COMPUTER ENGINEERING</Link>
                   </h2>
                   <p>These are Computer Engineering Science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>
                 </div>
@@ -232,19 +240,28 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">COMPUTER SCIENCE</Link>
+                    <Link to="/COMMERCE/COMMERCE"> COMMERCE </Link>
                   </h2>
-                  <p>These are Computer Science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>
+                  <p>These are  COMMERCE department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>
                 </div>
               </div>
             </div>
-
+         
+            <div className="col-12 col-md-4 mb-1">
+              <div className="service service-summary">
+                <div className="service-content">
+                  <h2 className="service-title">
+                    <Link to="/CooperativeEconomic/CooperativeEconomic">   Cooperative Economic Project Topics and Materials</Link>
+                  </h2>
+                  <p>   Cooperative Economic department project topics with available well written chapters one to chapter five, Please click on a project topic to view its details and order for the complete material</p>
+                </div></div>
+            </div>
 
             <div className="col-12 col-md-4 mb-1">
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">CRIMINOLOGY AND SECURITY STUDIES Project Topics and Materials</Link>
+                    <Link to="/CRIMINOLOGY/CRIMINOLOGY">CRIMINOLOGY AND SECURITY STUDIES Project Topics and Materials</Link>
                   </h2>
                   <p>CRIME CASE REPORTING AND THE OBSERVABLE IMPACT ON ITS VICTIMS | CONFESSIONAL STATEMENT UTILITY IN CRIMINAL TRIALS .. These are Criminology and Security Studies department project topics with available well written chapters one to chapter five, Please click on a project topic to view its details and order for the complete material</p>
                 </div></div>
@@ -254,7 +271,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">Economics Project Topics and Materials</Link>
+                    <Link to="/Economics/Economics">Economics Project Topics and Materials</Link>
                   </h2>
                   <p>These are Economics department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>
                 </div>
@@ -265,7 +282,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">Education Project Topics and Materials</Link>
+                    <Link to="/Education/Education">Education Project Topics and Materials</Link>
                   </h2>
                   <p>These are Education department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>
                 </div>   </div>
@@ -276,7 +293,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">ELECTRICAL & ELECTRONICS ENGINEERING</Link>
+                    <Link to="/ELECTRICAL/ELECTRICAL">ELECTRICAL & ELECTRONICS ENGINEERING</Link>
                   </h2>
                   <p>These are Electrical & Electronic Engineering Science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>
                 </div>
@@ -287,18 +304,28 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">ENGLISH LANGUAGE & LITERATURE</Link>
+                    <Link to="/ENGLISH/ENGLISH">ENGLISH LANGUAGE & LITERATURE</Link>
                   </h2>
                   <p>These are English Language & Literature department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>
                 </div>
               </div>
             </div>
-
             <div className="col-12 col-md-4 mb-1">
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">ENTREPRENEURSHIP</Link>
+                    <Link to="/FineandAppliedArts/FineandAppliedArts"> Fine and Applied Arts</Link>
+                  </h2>
+                  <p>These are  Fine and Applied Arts department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="col-12 col-md-4 mb-1">
+              <div className="service service-summary">
+                <div className="service-content">
+                  <h2 className="service-title">
+                    <Link to="/ENTREPRENEURSHIP/ENTREPRENEURSHIP">ENTREPRENEURSHIP</Link>
                   </h2>
                   <p>These are Entertreneurship  department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>
                 </div>
@@ -310,25 +337,6 @@ const Home = props => {
 
 
 
-            <div className="col-12 col-md-4 mb-1">
-              <div className="service service-summary">
-                <div className="service-content">
-                  <h2 className="service-title">
-                    <Link to="/accountings/">ENVIRONMENTAL DESIGN</Link>
-                  </h2>
-                  <p>These are Enviromental Design department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
-              </div>
-            </div>
-
-            <div className="col-12 col-md-4 mb-1">
-              <div className="service service-summary">
-                <div className="service-content">
-                  <h2 className="service-title">
-                    <Link to="/accountings/">Biological Science Project Topics and Available Materials</Link>
-                  </h2>
-                  <p>These are Biology Science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
-              </div>
-            </div>
 
             <div className="col-12 col-md-4 mb-1">
               <div className="service service-summary">
@@ -354,7 +362,37 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">GEOLOGY</Link>
+                    <Link to="/FineandAppliedArts/FineandAppliedArts"> Fine and Applied Arts</Link>
+                  </h2>
+                  <p>These are Enviromental Design department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-4 mb-1">
+              <div className="service service-summary">
+                <div className="service-content">
+                  <h2 className="service-title">
+                    <Link to="/FisheryandAquacultur/FisheryandAquacultur"> Fishery and Aquacultur Project Topics and Available Materials</Link>
+                  </h2>
+                  <p>These are Biology Science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-4 mb-1">
+              <div className="service service-summary">
+                <div className="service-content">
+                  <h2 className="service-title">
+                    <Link to="/FoodTechnology/FoodTechnology">Food Technology</Link>
+                  </h2>
+                  <p>These are Food Technology department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-4 mb-1">
+              <div className="service service-summary">
+                <div className="service-content">
+                  <h2 className="service-title">
+                    <Link to="/Geography/Geography"> Geography</Link>
                   </h2>
                   <p>These are Geography department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -364,7 +402,17 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">HISTORY</Link>
+                    <Link to="/GEOLOGY/GEOLOGY">GEOLOGY</Link>
+                  </h2>
+                  <p>These are Geography department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
+              </div>
+            </div>
+           
+            <div className="col-12 col-md-4 mb-1">
+              <div className="service service-summary">
+                <div className="service-content">
+                  <h2 className="service-title">
+                    <Link to="/HISTORY/HISTORY">HISTORY</Link>
                   </h2>
                   <p>These are History department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -374,17 +422,18 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">HUMAN RESOURCE MANAGEMENT</Link>
+                    <Link to="/HUMANRESOURCEMANAGEMENT/HUMANRESOURCEMANAGEMENT">HUMAN RESOURCE MANAGEMENT</Link>
                   </h2>
                   <p>These are Human Resources Management department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
             </div>
 
+           
             <div className="col-12 col-md-4 mb-1">
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">INSURANCE</Link>
+                    <Link to="/INSURANCE/INSURANCE">INSURANCE</Link>
                   </h2>
                   <p>These are Insurance department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -394,7 +443,17 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">GEOLOGY</Link>
+                    <Link to="/IndustrialChemistry/IndustrialChemistry"> Industrial Chemistry</Link>
+                  </h2>
+                  <p>These are  Industrial Chemistry department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-4 mb-1">
+              <div className="service service-summary">
+                <div className="service-content">
+                  <h2 className="service-title">
+                    <Link to="/Geography/Geography">Geography</Link>
                   </h2>
                   <p>These are Geography department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -404,9 +463,9 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">INTERNATIONAL RELATIONS</Link>
+                    <Link to="/IndustrialRelationsandPersonneManagement/IndustrialRelationsandPersonneManagement"> Industrial Relations and Personnel Management</Link>
                   </h2>
-                  <p>These are International Relation department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
+                  <p>These are  Industrial Relations and Personnel Management department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
             </div>
 
@@ -414,7 +473,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">LAW</Link>
+                    <Link to="/LAW/LAW">LAW</Link>
                   </h2>
                   <p>These are Law department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -424,7 +483,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">LIBRARY SCIENCE</Link>
+                    <Link to="/LIBRARYSCIENCE/LIBRARYSCIENCE">LIBRARY SCIENCE</Link>
                   </h2>
                   <p>These are Library science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -434,7 +493,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">INTERNATIONAL RELATIONS</Link>
+                    <Link to="/INTERNATIONALRELATIONS/INTERNATIONALRELATIONS">INTERNATIONAL RELATIONS</Link>
                   </h2>
                   <p>These are International Relation department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -444,7 +503,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">LINGUISTICS & COMMUNICATION</Link>
+                    <Link to="/LINGUISTICSCOMMUNICATION/LINGUISTICSCOMMUNICATION">LINGUISTICS & COMMUNICATION</Link>
                   </h2>
                   <p>These are Linguistic & COMMUNICATION department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -454,7 +513,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">MARKETING</Link>
+                    <Link to="/MARKETING/MARKETING">MARKETING</Link>
                   </h2>
                   <p>These are Marketing department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -464,7 +523,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">LIBRARY SCIENCE</Link>
+                    <Link to="/MedicalandHealthScience/MedicalandHealthScience"> Medical and Health Science</Link>
                   </h2>
                   <p>These are Library science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -484,7 +543,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">MATHEMATICS</Link>
+                    <Link to="/MATHEMATICS/MATHEMATICS">MATHEMATICS</Link>
                   </h2>
                   <p>These are Mathematics department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -494,27 +553,18 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">MECHANICAL ENGINEERING</Link>
+                    <Link to="/MECHANICALENGINEERING/MECHANICALENGINEERING">MECHANICAL ENGINEERING</Link>
                   </h2>
                   <p>These are Mechanical Engineering department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
             </div>
 
-            <div className="col-12 col-md-4 mb-1">
-              <div className="service service-summary">
-                <div className="service-content">
-                  <h2 className="service-title">
-                    <Link to="/accountings/">LIBRARY SCIENCE</Link>
-                  </h2>
-                  <p>These are Library science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
-              </div>
-            </div>
 
             <div className="col-12 col-md-4 mb-1">
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">MEDICAL & HEALTH SCIENCE</Link>
+                    <Link to="/MedicalandHealthScience/MedicalandHealthScience">MEDICAL & HEALTH SCIENCE</Link>
                   </h2>
                   <p>These are Medical And Health science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -524,7 +574,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">LIBRARY SCIENCE</Link>
+                    <Link to="/LIBRARYSCIENCE/LIBRARYSCIENCE">LIBRARY SCIENCE</Link>
                   </h2>
                   <p>These are Library science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -534,7 +584,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">MICROBIOLOGY</Link>
+                    <Link to="/MICROBIOLOGY/MICROBIOLOGY">MICROBIOLOGY</Link>
                   </h2>
                   <p>These are Microbiology department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -544,7 +594,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">NURSING</Link>
+                    <Link to="/NURSING/NURSING">NURSING</Link>
                   </h2>
                   <p>These are Nursing department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -554,7 +604,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">OFFICE TECHNOLOGY MANAGEMENT</Link>
+                    <Link to="/OFFICETECHNOLOGYMANAGEMENT/OFFICETECHNOLOGYMANAGEMENT">OFFICE TECHNOLOGY MANAGEMENT</Link>
                   </h2>
                   <p>These are Office Technology Management department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -563,7 +613,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">PHARMACEUTICAL SCIENCES</Link>
+                    <Link to="/PHARMACEUTICALSCIENCES/PHARMACEUTICALSCIENCES">PHARMACEUTICAL SCIENCES</Link>
                   </h2>
                   <p>These are Pharmaceutical Science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -573,7 +623,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">PHILOSOPHY</Link>
+                    <Link to="/PHILOSOPHY/PHILOSOPHY">PHILOSOPHY</Link>
                   </h2>
                   <p>These are Philosophy department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -584,7 +634,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">PHYSICS</Link>
+                    <Link to="/PHYSICS/PHYSICS">PHYSICS</Link>
                   </h2>
                   <p>These are Physics department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -594,7 +644,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">POLITICAL SCIENCE</Link>
+                    <Link to="/POLITICALSCIENCE/POLITICALSCIENCE">POLITICAL SCIENCE</Link>
                   </h2>
                   <p>These are Political Science department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -604,7 +654,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">PSYCHOLOGY</Link>
+                    <Link to="/PSYCHOLOGY/PSYCHOLOGY">PSYCHOLOGY</Link>
                   </h2>
                   <p>These are Psychology department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -614,7 +664,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">PUBLIC ADMINISTRATION</Link>
+                    <Link to="/PUBLICADMINISTRATION/PUBLICADMINISTRATION">PUBLIC ADMINISTRATION</Link>
                   </h2>
                   <p>These are  Management department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -625,7 +675,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">PUBLIC HEALTH</Link>
+                    <Link to="/PUBLICHEALTH/PUBLICHEALTH">PUBLIC HEALTH</Link>
                   </h2>
                   <p>These are Public Health department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -635,7 +685,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">PROJECT MANAGEMENT</Link>
+                    <Link to="/PROJECTMANAGEMENT/PROJECTMANAGEMENT">PROJECT MANAGEMENT</Link>
                   </h2>
                   <p>These are Project  Management department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -645,7 +695,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">PURCHASING & SUPPLY CHAIN MANAGEMENT</Link>
+                    <Link to="/PURCHASINGSUPPLYCHAINMANAGEMENT/PURCHASINGSUPPLYCHAINMANAGEMENT">PURCHASING & SUPPLY CHAIN MANAGEMENT</Link>
                   </h2>
                   <p>These are Purchasing & supply Chain Management department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -656,9 +706,21 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">QUANTITY SURVEY</Link>
+                    <Link to="/QUANTITYSURVEY/QUANTITYSURVEY">QUANTITY SURVEY</Link>
                   </h2>
                   <p>These are Quantity Survey department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
+              </div>
+            </div>
+
+            
+
+<div className="col-12 col-md-4 mb-1">
+              <div className="service service-summary">
+                <div className="service-content">
+                  <h2 className="service-title">
+                    <Link to="/SecretarialAdministration/SecretarialAdministration">Secretarial Administration</Link>
+                  </h2>
+                  <p>These are Secretarial Administration department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
             </div>
 
@@ -666,7 +728,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">SCIENCE LABORATORY TECHNOLOGY</Link>
+                    <Link to="/SCIENCELABORATORYTECHNOLOGY/SCIENCELABORATORYTECHNOLOGY">SCIENCE LABORATORY TECHNOLOGY</Link>
                   </h2>
                   <p>These are Science Labouratory Technology department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -676,7 +738,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">SOCIOLOGY</Link>
+                    <Link to="/SOCIOLOGY/SOCIOLOGY">SOCIOLOGY</Link>
                   </h2>
                   <p>These are Sociology department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -686,7 +748,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">STATISTICS</Link>
+                    <Link to="/STATISTICS/STATISTICS">STATISTICS</Link>
                   </h2>
                   <p>These are Statistics department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -696,7 +758,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">THEATRE ARTS</Link>
+                    <Link to="/THEATREARTS/THEATREARTS">THEATRE ARTS</Link>
                   </h2>
                   <p>These are Theartre Arts department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
@@ -706,12 +768,22 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">THEOLOGY & BIBLICAL STUDIES</Link>
+                    <Link to="/THEOLOGYBIBLICALSTUDIES/THEOLOGYBIBLICALSTUDIES">THEOLOGY & BIBLICAL STUDIES</Link>
                   </h2>
                   <p>These are Theology & bible Studies department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>
             </div>
 
+            <div className="col-12 col-md-4 mb-1">
+              <div className="service service-summary">
+                <div className="service-content">
+                  <h2 className="service-title">
+                    <Link to="/TransportManagement/TransportManagement">Transport Management</Link>
+                  </h2>
+                  <p>These are  Transport Management department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
+              </div>
+            </div>
+            
             <div className="col-12 col-md-4 mb-1">
               <div className="service service-summary">
                 <div className="service-content">
@@ -726,7 +798,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">VETERINARY MEDICINE</Link>
+                    <Link to="/VETERINARYMEDICINE/VETERINARYMEDICINE">VETERINARY MEDICINE</Link>
                   </h2>
                   <p>These are Veterinary Medicine department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>

@@ -2,7 +2,7 @@ import React, {useState} from "react"
 import { Link, navigate, graphql } from "gatsby"
 import Layout from "../../components/Layout"
 import './link.css'
-const Acounting = ({ data }) => {
+const Accounting = ({ data }) => {
   const [count, setCount] = useState(0);
 
   function singlepage(e, title) {
@@ -44,9 +44,9 @@ const Acounting = ({ data }) => {
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )}
-export default Acounting
+export default Accounting
 export const pageQuery = graphql`
-  query Acounting {
+  query Accounting {
     allAccountingsJson  {
       edges {
         node {
