@@ -24,7 +24,7 @@ const Architecture = ({ data }) => {
         <div className="row justify-content-start">
 
           <ul>
-            {data.allArchitecturesJson .edges.map(document => ( 
+            {data.allArchitecturesJson.edges.map(document => ( 
 
               <div key={document.node.id} className="list-group" >
                 <li key={document.node.id }>
