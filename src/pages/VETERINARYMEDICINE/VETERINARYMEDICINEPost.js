@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import parser from 'html-react-parser';
 import Layout from '../../components/Layout';
 import {Link} from 'gatsby'
-import data from '../../categories/computer_sciences.json'
+import data from '../../categories/veterinary.json'
 
 export class VETERINARYMEDICINEPost extends Component {
   constructor (){

@@ -36,7 +36,7 @@ const VETERINARYMEDICINE = ({ data }) => {
            <em>Computer Science Project Topics and Materials</em></span></h4>
            </div>
           <ul>
-            {data.allComputerSciencesJson .edges.map(document => ( 
+            {data.allVeterinaryJson .edges.map(document => ( 
 
               <div key={document.node.id} className="list-group" >
                 <li key={document.node.id }>
@@ -59,7 +59,7 @@ const VETERINARYMEDICINE = ({ data }) => {
 export default VETERINARYMEDICINE
 export const pageQuery = graphql`
   query VETERINARYMEDICINE {
-    allComputerSciencesJson  {
+    allVeterinaryJson  {
       edges {
         node {
           id
