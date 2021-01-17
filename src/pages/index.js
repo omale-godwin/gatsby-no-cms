@@ -352,7 +352,7 @@ const Home = props => {
               <div className="service service-summary">
                 <div className="service-content">
                   <h2 className="service-title">
-                    <Link to="/accountings/">ESTATE MANAGEMENT</Link>
+                    <Link to="/ESTATEMANAGEMENT/ESTATEMANAGEMENT">ESTATE MANAGEMENT</Link>
                   </h2>
                   <p>These are Estate Management department project topics with available well written chapters 1 to chapter 5, Please click on a project topic to view its details and order for the complete material</p>    </div>
               </div>

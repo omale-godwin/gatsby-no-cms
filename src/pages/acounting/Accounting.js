@@ -55,10 +55,11 @@ const Accounting = () => {
               </div>
             ))}
           </ul>
+          <div style={{wordWrap: "break-word"}} className="container"><Paginaion postPerPage={postPerPage} totalPosts={data.length} paginate={paginated }/></div>
+
         </div>
       </div>
     </div>
-   <div style={{wordWrap: "break-word"}} className="container-fluid"><Paginaion postPerPage={postPerPage} totalPosts={data.length} paginate={paginated }/></div>
-  </Layout>
+    </Layout>
 )}
 export default Accounting

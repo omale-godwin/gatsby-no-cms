@@ -1,21 +1,37 @@
-import parser from 'html-react-parser';
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import { Link, navigate, graphql } from "gatsby"
 import Layout from "../../components/Layout"
+import data from '../../categories/computer_engineering.json'
+import Paginaion from '../../components/Paginaion';
 import './link.css'
-const COMPUTERENGINEERING = ({ data }) => {
+const COMPUTERENGINEERING = () => {
   const [count, setCount] = useState(0);
+
+  const [loadings, srtLoadings] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postPerPage, setPostPerPage] = useState(60);
+ let index = 0;
+
+  const indexOfLastPost = currentPage * postPerPage;
+  const indexOfFirstPost = indexOfLastPost - postPerPage;
+  const currentpost = data.slice(indexOfFirstPost, indexOfLastPost);
 
   function singlepage(e, title) {
     console.log(e);
-    navigate(`/COMPUTERENGINEERING/COMPUTERENGINEERINGPost?COMPUTERENGINEERINGPost=${title}&id=${e}`)
+    navigate(`/COMPUTERENGINEERING/COMPUTERENGINEERINGPost?title=${title}&id=${e}`)
   }
+
+  //cange current page number
+  const paginated = (pagenumber) => setCurrentPage(pagenumber); 
   return ( 
   <Layout>
-    <div className="text-center pt-5" style={{color: '#8036ca'}}>
-      <h4>ARCHITECTURE PROJECT TOPICS AND MATERIALS</h4>
-      
-
+    <div className="container text-center pt-5" style={{color: '#8036ca'}}>
+    <h4 style={{textAlign: 'center'}}>
+          <span style={{fontSize: '15px'}}>Please Scroll Down To Click On Your Topic To View Abstract, Table Of Contents And Chapter 1-5, 
+          references, seminar defence, questionnaire,<strong> source code</strong> And Download complete Material Instantly Or 
+          <span style={{color: '#008000'}}><strong>Call Us Or Whats-App Us (+234) 9032196744</strong></span>&nbsp;For Your
+           <em>Computer Science Project Topics and Materials</em></span></h4>
+       
     </div>
     
     <h3></h3>
@@ -24,37 +40,26 @@ const COMPUTERENGINEERING = ({ data }) => {
         <div className="row justify-content-start">
 
           <ul>
-            {data.allArchitecturesJson .edges.map(document => ( 
-
-              <div key={document.node.id} className="list-group" >
-                <li key={document.node.id }>
+            {currentpost.map((document, index) => ( 
+ 
+              <div key={index} className="list-group" >
+                <li key={index}>
                <ul>
-                 <li >
-                  <h5 >
-                    <button key={document.node.id } onClick={(e) =>singlepage(document.node.id, document.node.title)} className="list-group-item " to={`/${document.node.id}`}><h3>{parser(document.node.title)}</h3></button>
-                  </h5>
+                 <li  style={{listStyleType: "none"}}>
+                  <h6 >
+                    <button key={index } onClick={(e) =>singlepage(index, document.title)} className="list-group-item " to={`/${index}`}>{document.title}</button>
+                  </h6>
                   </li>
                   </ul>
                 </li>
               </div>
             ))}
           </ul>
+          <div style={{wordWrap: "break-word"}} className="container"><Paginaion postPerPage={postPerPage} totalPosts={data.length} paginate={paginated }/></div>
+
         </div>
       </div>
     </div>
-     </Layout>
+    </Layout>
 )}
 export default COMPUTERENGINEERING
-export const pageQuery = graphql`
-  query COMPUTERENGINEERING {
-    allArchitecturesJson  {
-      edges {
-        node {
-          id
-          title
-        }
-      }
-    }
-  }
-  
-`

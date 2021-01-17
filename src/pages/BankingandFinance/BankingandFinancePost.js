@@ -46,9 +46,9 @@ export class BankingandFinancePost extends Component {
             </div>
     
             
-          <h1 className="alert alert-info text-center" style={{fontSize:'18px'}}>{data[this.state.postid - 1].title}</h1>
+          <h1 className="alert alert-info text-center" style={{fontSize:'18px'}}>{data[this.state.postid ].title}</h1>
           <br /><br />
-          {parser(data[this.state.postid - 1].content.replace(/\n/gi, "<br />"))};
+          {parser(data[this.state.postid ].content.replace(/\n/gi, "<br />"))};
       
           </div>
         </Layout>

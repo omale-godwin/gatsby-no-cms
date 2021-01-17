@@ -41,9 +41,9 @@ console.log(posts);
                 <li key={index}>
                <ul>
                  <li >
-                  <h5 >
+                  <h6 >
                     <button key={index } onClick={(e) =>singlepage(index, document.title)} className="list-group-item " to={`/${index}`}>{document.title}</button>
-                  </h5>
+                  </h6>
                   </li>
                   </ul>
                 </li>

@@ -31,7 +31,7 @@ const Architecture = ({ data }) => {
                <ul>
                  <li >
                   <h5 >
-                    <button key={document.node.id } onClick={(e) =>singlepage(document.node.id, document.node.title)} className="list-group-item " to={`/${document.node.id}`}><h3>{parser(document.node.title)}</h3></button>
+                    <button key={document.node.id } onClick={(e) =>singlepage(document.node.id, document.node.title)} className="list-group-item " to={`/${document.node.id}`}><h3 style={{fontSize:'150px important'}}>{parser(document.node.title)}</h3></button>
                   </h5>
                   </li>
                   </ul>
