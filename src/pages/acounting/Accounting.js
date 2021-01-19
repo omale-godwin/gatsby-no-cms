@@ -19,7 +19,7 @@ const Accounting = () => {
   function singlepage(e, title) {
     console.log(e);
     navigate(`/acounting/AccountingPosts?title=${title}&id=${e}`)
-  }
+  }  
 
   //cange current page number
   const paginated = (pagenumber) => setCurrentPage(pagenumber); 
