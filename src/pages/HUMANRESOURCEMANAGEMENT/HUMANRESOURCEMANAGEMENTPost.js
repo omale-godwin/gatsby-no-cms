@@ -2,9 +2,9 @@ import React, {Component} from 'react'
 import parser from 'html-react-parser';
 import Layout from '../../components/Layout';
 import {Link} from 'gatsby'
-import data from '../../categories/computer_sciences.json'
+import data from '../../categories/human_resource_management_project.json'
 
-export class HUMANRESOURCEMANAGEMENTPost extends Component {
+export class HUMANRESOURCEMANAGEMENT extends Component {
   constructor (){
     super()
     this.state = {
@@ -46,9 +46,9 @@ export class HUMANRESOURCEMANAGEMENTPost extends Component {
             </div>
     
      
-            <h1 className="alert alert-info text-center" style={{fontSize:'18px'}}>{data[this.state.postid - 1].title}</h1>
+            <h1 className="alert alert-info text-center" style={{fontSize:'18px'}}>{data[this.state.postid ].title}</h1>
        
-          {parser(data[this.state.postid - 1].content.replace(/\n/gi, "<br />"))};
+          {parser(data[this.state.postid].content.replace(/\n/gi, "<br />"))};
       
           </div>
         </Layout>
@@ -56,4 +56,4 @@ export class HUMANRESOURCEMANAGEMENTPost extends Component {
   )}}
 }
 
-export default HUMANRESOURCEMANAGEMENTPost
+export default HUMANRESOURCEMANAGEMENT

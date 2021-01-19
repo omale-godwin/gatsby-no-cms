@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
 import { Link, navigate, graphql } from "gatsby"
 import Layout from "../../components/Layout"
-import data from '../../categories/accountings.json'
+import data from '../../categories/banking_and_finance.json'
 import Paginaion from '../../components/Paginaion';
 import './link.css'
 const BankingandFinance = () => {

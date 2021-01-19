@@ -87,6 +87,29 @@ const Home = props => {
             </div>
 
 
+           
+ <div className="col-12 col-md-4 mb-1">
+              <div className="service service-summary">
+                <div className="service-content">
+                  <h2 className="service-title">
+                    <Link to="/ AgricEconomicsExtension/ AgricEconomicsExtension">  Agric Economics and Extension</Link>
+                  </h2>
+              
+                </div>
+              </div>
+            </div>
+
+          
+            <div className="col-12 col-md-4 mb-1">
+              <div className="service service-summary">
+                <div className="service-content">
+                  <h2 className="service-title">
+                    <Link to="/AgricEngineering/AgricEngineering">  Agricultural ENGINEERING</Link>
+                  </h2>
+                 
+                </div>
+              </div>
+            </div>
 
 
             <div className="col-12 col-md-4 mb-1">

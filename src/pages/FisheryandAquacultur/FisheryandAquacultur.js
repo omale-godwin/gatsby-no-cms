@@ -1,10 +1,19 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import { Link, navigate, graphql } from "gatsby"
 import Layout from "../../components/Layout"
+import data from '../../categories/computer_sciences.json'
 import './link.css'
-const FisheryandAquacultur = ({ data }) => {
+const FisheryandAquacultur = () => {
   const [count, setCount] = useState(0);
-
+  const [posts, setPosts] = useState();
+  const [loadings, srtLoadings] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postPerPage, setPostPerPage] = useState(10);
+ let index = 0;
+  useEffect(() => {
+    setPosts(data)
+  }, [])
+console.log(posts);
   function singlepage(e, title) {
     console.log(e);
     navigate(`/FisheryandAquacultur/FisheryandAquaculturPost?title=${title}&id=${e}`)
@@ -12,9 +21,12 @@ const FisheryandAquacultur = ({ data }) => {
   return ( 
   <Layout>
     <div className="text-center pt-5" style={{color: '#8036ca'}}>
-      <h4>Acounting PROJECT TOPICS AND MATERIALS</h4>
-      
-
+    <h4 className="container" style={{textAlign: 'center'}}>
+          <span style={{fontSize: '15px'}}>Please Scroll Down To Click On Your Topic To View Abstract, Table Of Contents And Chapter 1-5, 
+          references, seminar defence, questionnaire,<strong> source code</strong> And Download complete Material Instantly Or 
+          <span style={{color: '#008000'}}><strong>Call Us Or Whats-App Us (+234) 9032196744</strong></span>&nbsp;For Your
+           <em>Computer Science Project Topics and Materials</em></span></h4>
+       
     </div>
     
     <h3></h3>
@@ -23,15 +35,15 @@ const FisheryandAquacultur = ({ data }) => {
         <div className="row justify-content-start">
 
           <ul>
-            {data.allAccountingsJson .edges.map(document => ( 
+            {data.map((document, index) => ( 
 
-              <div key={document.node.id} className="list-group" >
-                <li key={document.node.id }>
+              <div key={index} className="list-group" >
+                <li key={index}>
                <ul>
                  <li >
-                  <h5 >
-                    <button key={document.node.id } onClick={(e) =>singlepage(document.node.id, document.node.title)} className="list-group-item " to={`/${document.node.id}`}>{document.node.title}</button>
-                  </h5>
+                  <h6 >
+                    <button key={index } onClick={(e) =>singlepage(index, document.title)} className="list-group-item " to={`/${index}`}>{document.title}</button>
+                  </h6>
                   </li>
                   </ul>
                 </li>
@@ -45,16 +57,3 @@ const FisheryandAquacultur = ({ data }) => {
   </Layout>
 )}
 export default FisheryandAquacultur
-export const pageQuery = graphql`
-  query FisheryandAquacultur {
-    allAccountingsJson  {
-      edges {
-        node {
-          id
-          title
-        }
-      }
-    }
-  }
-  
-`

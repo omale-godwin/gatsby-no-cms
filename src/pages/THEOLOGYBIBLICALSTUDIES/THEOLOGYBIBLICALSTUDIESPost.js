@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import parser from 'html-react-parser';
 import Layout from '../../components/Layout';
+import data from '../../categories/theology.json'
 import {Link} from 'gatsby'
-import data from '../../categories/computer_sciences.json'
 
-export class THEOLOGYBIBLICALSTUDIES extends Component {
+export class THEOLOGYBIBLICALSTUDIESPost extends Component {
   constructor (){
     super()
     this.state = {
@@ -30,25 +30,25 @@ export class THEOLOGYBIBLICALSTUDIES extends Component {
   return (
     <div>
        <Layout>
-      <div className="container">
-      <div className="alert alert-success no-margin" style={{fontSize: '16px'}}>
+       <div className="container">
+       <div className="alert alert-success no-margin" style={{fontSize: '16px'}}>
                 <i className="fa fa-file-text"></i>&nbsp;Format: <b>MS WORD</b>&nbsp;::&nbsp;
                 <i className="fa fa-folder-open"></i>&nbsp;Chapters: <b>1-5</b>&nbsp;::&nbsp;
-             
-          references, questionnaire,<strong> source code</strong> And Download complete Material Instantly Or 
-          <span style={{color: '#008000'}}><strong>Call Us Or Whats-App Us (+234) 9032196744</strong></span>&nbsp;For Your
-           <em>Computer Science Project Topics and Materials</em>
               
-                <i className="fa fa-group"></i>&nbsp;
+                <i className="fa fa-chain"></i>&nbsp;Attributes: <b>Questionnaire, Data Analysis</b>
+                                    ::&nbsp;
+              
+                <i className="fa fa-group"></i>&nbsp;<b>4,921 </b> people found this useful
+                              
                 <div className="text-center">
                   <Link to="" id="get" className="btn btn-lg btn-warning" >Get the complete project »</Link>
                 </div>
             </div>
     
-     
-            <h1 className="alert alert-info text-center" style={{fontSize:'18px'}}>{data[this.state.postid - 1].title}</h1>
-       
-          {parser(data[this.state.postid - 1].content.replace(/\n/gi, "<br />"))};
+            
+          <h1 className="alert alert-info text-center" style={{fontSize:'18px'}}>{data[this.state.postid ].title}</h1>
+          <br /><br />
+          {parser(data[this.state.postid ].content.replace(/\n/gi, "<br />"))};
       
           </div>
         </Layout>
@@ -56,4 +56,4 @@ export class THEOLOGYBIBLICALSTUDIES extends Component {
   )}}
 }
 
-export default THEOLOGYBIBLICALSTUDIES
+export default THEOLOGYBIBLICALSTUDIESPost;

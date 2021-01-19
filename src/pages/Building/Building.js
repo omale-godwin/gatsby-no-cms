@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from "react"
 import { Link, navigate, graphql } from "gatsby"
 import Layout from "../../components/Layout"
-import data from '../../categories/building.json'
+import data from '../../categories/business_administration_and_management.json'
 import Paginaion from '../../components/Paginaion';
 import './link.css'
-const Building = () => {
+const BusinessAdministrationandManagement = () => {
   const [count, setCount] = useState(0);
 
   const [loadings, srtLoadings] = useState(false);
@@ -18,7 +18,7 @@ const Building = () => {
 
   function singlepage(e, title) {
     console.log(e);
-    navigate(`/Building/BuildingPost?title=${title}&id=${e}`)
+    navigate(`/BusinessAdministrationandManagement/BusinessAdministrationandManagementPost?title=${title}&id=${e}`)
   }
 
   //cange current page number
@@ -62,4 +62,4 @@ const Building = () => {
     </div>
     </Layout>
 )}
-export default Building
+export default BusinessAdministrationandManagement

@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import parser from 'html-react-parser';
 import Layout from '../../components/Layout';
-import data from '../../categories/accountings.json'
+import data from '../../categories/agric_economics_and_extension_project.json'
 import {Link} from 'gatsby'
 
-export class  AgricEconomicsExtensionPost extends Component {
+export class  AgricEconomicsExtension extends Component {
   constructor (){
     super()
     this.state = {
@@ -46,9 +46,9 @@ export class  AgricEconomicsExtensionPost extends Component {
             </div>
     
             
-          <h1 className="alert alert-info text-center" style={{fontSize:'18px'}}>{data[this.state.postid - 1].title}</h1>
+          <h1 className="alert alert-info text-center" style={{fontSize:'18px'}}>{data[this.state.postid ].title}</h1>
           <br /><br />
-          {parser(data[this.state.postid - 1].content.replace(/\n/gi, "<br />"))};
+          {parser(data[this.state.postid ].content.replace(/\n/gi, "<br />"))};
       
           </div>
         </Layout>
@@ -56,4 +56,4 @@ export class  AgricEconomicsExtensionPost extends Component {
   )}}
 }
 
-export default  AgricEconomicsExtensionPost;
+export default  AgricEconomicsExtension;

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import parser from 'html-react-parser';
 import Layout from '../../components/Layout';
-import data from '../../categories/accountings.json'
+import data from '../../categories/banking_and_finance.json'
 import {Link} from 'gatsby'
 
 export class BankingandFinancePost extends Component {
